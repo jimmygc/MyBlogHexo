@@ -3,16 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: GC的博客 -- GitHub.io
+logo: http://jimmygc.github.io/css/images/spawn.png
+subtitle: GC的博客 -- GitHub.io
 description:
-author: John Doe
+author: Jimmygc
 language:
 timezone:
 
+disqus_shortname: jimmygc
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://jimmygc.github.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -63,9 +66,45 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: hueman
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/jimmygc/jimmygc.github.io.git
+  branch: master
+  message: update blog
+
+# Header
+menu:
+  Home: /
+  # Delete this row if you don't want categories in your header nav bar
+  Categories:
+  About: /about/index.html
+
+# Content
+fancybox: true
+
+# Scroll Loading
+scrollLoading: true
+
+# Sidebar
+sidebar: left // sidebar's position (left or right)
+social_links:
+  github: https://github.com/jimmygc
+widgets:
+- recent_posts
+- category
+- archive
+- tag
+- tagcloud
+
+# Don't Use Google APIs if you are in google-blocked areas
+use_google_apis: false
+
+google_cse: 
+  enable: false
+  cx:  
+
+
