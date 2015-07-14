@@ -1,12 +1,9 @@
----
 layout: post
 title: 关于最近学习内核驱动中使用ETW的记录
 published: true
 comment: true
+
 ---
-
-
-
 **ETW**（Event Tracing for Windows）是微软的日志记录系统。与**WPP**不同的是，ETW多用于系统管理而WPP用于开发人员开发过程中的Debug。:smile:
 
 使用ETW需要生成XML格式的描述事件的XML或MAN声明文件，由声明文件用Windows kit自带的mc（message compiler）程序编译生成资源文件rc，头文件以及包含message信息的bin文件。
@@ -103,5 +100,8 @@ Generated Files Base Name	$(Filename)          \\生成文件的前缀定义，�
 在需要生成事件记录的地方调用写事件函数（**EventWriteDebugEvent**），写入事件。
 
 - 系统自动日志记录的配置
-![event-tracing-1](http://7xkc1v.com1.z0.glb.clouddn.com/images/event-tracing-1.png)
-TO BE Continued
+![](http://7xkc1v.com1.z0.glb.clouddn.com/images/event-tracing-1.png)
+![](http://7xkc1v.com1.z0.glb.clouddn.com/images/event-tracing-2.png)
+![](http://7xkc1v.com1.z0.glb.clouddn.com/images/event-tracing-3.png)
+![](http://7xkc1v.com1.z0.glb.clouddn.com/images/event-tracing-4.png)
+

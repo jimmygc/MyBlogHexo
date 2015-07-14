@@ -72,7 +72,7 @@ theme: hueman
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/jimmygc/jimmygc.github.io.git
+  repo: git@github.com:jimmygc/jimmygc.github.io.git
   branch: master
   message: update blog
 
